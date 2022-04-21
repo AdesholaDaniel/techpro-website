@@ -1,0 +1,45 @@
+.container {
+  margin: 2rem 2rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-container img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 2px solid rgba(56, 125, 255, 0.17);
+  border-radius: 2%;
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+}
+
+.blog-container h2 {
+  text-transform: uppercase;
+  padding-top: 1rem;
+  text-align: center;
+}
+.blog-container p {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 960px) {
+  .blog-container p {
+    font-size: 1.1rem;
+    align-items: center;
+    text-align: center;
+    overflow-x: hidden;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+  }
+}
